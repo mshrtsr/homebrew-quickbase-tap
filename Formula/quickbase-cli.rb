@@ -10,16 +10,16 @@ class QuickbaseCli < Formula
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/QuickBase/quickbase-cli/releases/download/0.2.3/quickbase-cli_0.2.3_Darwin_x86_64.tar.gz"
-    sha256 "0bcacdd69dae79371b8418856c3eda71476ccab40fc915e2debb2eaec3479768"
+    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.3/quickbase-cli_0.2.3_Darwin_x86_64.tar.gz"
+    sha256 "4719b6e79a24329791e2bc17c15bc5e377433c090b9116073395b775b9698281"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/QuickBase/quickbase-cli/releases/download/0.2.3/quickbase-cli_0.2.3_Linux_x86_64.tar.gz"
-    sha256 "58b49aace5983b7faae177623846e8324e294269f6a03cf894737c1ec4d9b2c8"
+    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.3/quickbase-cli_0.2.3_Linux_x86_64.tar.gz"
+    sha256 "25dc05b2f0ff8b43635059305d6bf9d1e48e896cb0e4b09a118f9213b07faa3c"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/QuickBase/quickbase-cli/releases/download/0.2.3/quickbase-cli_0.2.3_Linux_arm64.tar.gz"
-    sha256 "d37812ae34e55ca9c329fd8f21e0d65bb870a19d33d194d79c4d2889fe1ba44c"
+    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.3/quickbase-cli_0.2.3_Linux_arm64.tar.gz"
+    sha256 "74d533c7fa99c432283d5e84731b59bff157f87a0467c5102f8c97c6ae7f3e20"
   end
 
   def install
