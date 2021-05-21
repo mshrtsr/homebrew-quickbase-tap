@@ -5,21 +5,21 @@
 class QuickbaseCli < Formula
   desc "A Command Line Interface (CLI) to manage your Quickbase applications."
   homepage "https://github.com/QuickBase/quickbase-cli"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
   bottle :unneeded
 
-  if OS.mac?
-    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.2/quickbase-cli_0.2.2_Darwin_x86_64.tar.gz"
-    sha256 "e63053516e366840dd57cea09e726944c1f9db8bac53b3982faf3d08a873e937"
+  if OS.mac? && Hardware::CPU.intel?
+    url "https://github.com/QuickBase/quickbase-cli/releases/download/0.2.3/quickbase-cli_0.2.3_Darwin_x86_64.tar.gz"
+    sha256 "0bcacdd69dae79371b8418856c3eda71476ccab40fc915e2debb2eaec3479768"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.2/quickbase-cli_0.2.2_Linux_x86_64.tar.gz"
-    sha256 "4c946e3cb50960aeef6dea4ce420a61763e615ebd3e139e67efcf4876e4b6f9d"
+    url "https://github.com/QuickBase/quickbase-cli/releases/download/0.2.3/quickbase-cli_0.2.3_Linux_x86_64.tar.gz"
+    sha256 "58b49aace5983b7faae177623846e8324e294269f6a03cf894737c1ec4d9b2c8"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.2/quickbase-cli_0.2.2_Linux_arm64.tar.gz"
-    sha256 "70a9f3ec05c214deed0b87080eeeaac8835077967e4a9e0617279616f353cd15"
+    url "https://github.com/QuickBase/quickbase-cli/releases/download/0.2.3/quickbase-cli_0.2.3_Linux_arm64.tar.gz"
+    sha256 "d37812ae34e55ca9c329fd8f21e0d65bb870a19d33d194d79c4d2889fe1ba44c"
   end
 
   def install
