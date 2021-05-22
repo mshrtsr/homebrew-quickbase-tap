@@ -5,25 +5,25 @@
 class QuickbaseCli < Formula
   desc "A Command Line Interface (CLI) to manage your Quickbase applications."
   homepage "https://github.com/QuickBase/quickbase-cli"
-  version "0.2.5"
+  version "0.2.6-rc.1"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.5/quickbase-cli_0.2.5_Darwin_x86_64.tar.gz"
-    sha256 "b78d7f979362c5af7a444159c53ce9fc00d209573fd50503ee9a62d549f416e1"
+    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.6-rc.1/quickbase-cli_0.2.6-rc.1_Darwin_x86_64.tar.gz"
+    sha256 "1d764a52033748e60161bcb845ed9985bc2e6dd8d5f6fb2410c0c3da3aedb06b"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.5/quickbase-cli_0.2.5_Darwin_arm64.tar.gz"
-    sha256 "285287d2ac53375a4b09e5007f664c870cf1137b2b76656540bcd4c5fd55cbed"
+    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.6-rc.1/quickbase-cli_0.2.6-rc.1_Darwin_arm64.tar.gz"
+    sha256 "04bd0086de0b1e7e83538deb8df4262aab2b0da07a6d462e0d51c3a66787ffab"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.5/quickbase-cli_0.2.5_Linux_x86_64.tar.gz"
-    sha256 "cd2b66c3e48b556858585d17c61b1c96c2104f6a138d91dde41378aa35b53d81"
+    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.6-rc.1/quickbase-cli_0.2.6-rc.1_Linux_x86_64.tar.gz"
+    sha256 "aa561bd952282e1203633ef312988f07a01a6623c4754f7bc83f277d3a8f557e"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.5/quickbase-cli_0.2.5_Linux_arm64.tar.gz"
-    sha256 "565395818474186e7992859d0cae7dd576dd0a7897306fdc9b033784bf816900"
+    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.6-rc.1/quickbase-cli_0.2.6-rc.1_Linux_arm64.tar.gz"
+    sha256 "cafdd9ee1c3bb162009c9cb170a552dd12dac9846ef8cee3ee0d45a74fcbb38c"
   end
 
   def install
