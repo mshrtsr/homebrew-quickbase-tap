@@ -5,25 +5,25 @@
 class QuickbaseCli < Formula
   desc "A Command Line Interface (CLI) to manage your Quickbase applications."
   homepage "https://github.com/QuickBase/quickbase-cli"
-  version "0.2.6"
+  version "0.2.7"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.6/quickbase-cli_0.2.6_Darwin_x86_64.tar.gz"
-    sha256 "e9fe55e791434f0f3a8b674fce4d45fdb43dc0aed80504be963c98ccbf9481b0"
+    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.7/quickbase-cli_0.2.7_Darwin_x86_64.tar.gz"
+    sha256 "ca6613aae02aa081a8119a0cd502f411edfe80a8ca3a020b8a9341569130b567"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.6/quickbase-cli_0.2.6_Darwin_arm64.tar.gz"
-    sha256 "c489f1452753b7013d07f145a3180e3b415253aab495e00e5fc2fda15f287d88"
+    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.7/quickbase-cli_0.2.7_Darwin_arm64.tar.gz"
+    sha256 "3cb8b388c7ce7a09f4c42cd7315dddeab56b69b7c7b65aee09daaff74bdd4feb"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.6/quickbase-cli_0.2.6_Linux_x86_64.tar.gz"
-    sha256 "9dfaa99fa9157c85d85a8faa5bc01a9ba768ae8876515fd751d7a98469d9ce47"
+    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.7/quickbase-cli_0.2.7_Linux_x86_64.tar.gz"
+    sha256 "a75fa28490bd4316554b127bab64dd1ae3b7564462fa87cdfd3a5256e3da43bb"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.6/quickbase-cli_0.2.6_Linux_arm64.tar.gz"
-    sha256 "bd8669841d8ca53585a4751b0fedc169309b28a81f71c7f28d8bceb149d2902b"
+    url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.7/quickbase-cli_0.2.7_Linux_arm64.tar.gz"
+    sha256 "eec23ef700fd8bfa73f10a4186939b4fa4b2355837b5c5678ccc4ae4143d4e2b"
   end
 
   def install
