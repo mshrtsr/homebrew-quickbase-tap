@@ -7,7 +7,6 @@ class QuickbaseCli < Formula
   homepage "https://github.com/QuickBase/quickbase-cli"
   version "0.2.7"
   license "MIT"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/QuickBase/quickbase-cli/releases/download/v0.2.7/quickbase-cli_0.2.7_Darwin_x86_64.tar.gz"
